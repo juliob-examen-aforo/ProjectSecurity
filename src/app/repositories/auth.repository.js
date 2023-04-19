@@ -9,10 +9,6 @@ const con = mysql.createConnection({
 })
 
 const authRepository = {
-    /*getUsersByCredentials: async (userName, password) => {
-        var results = await pool.query('SELECT * FROM security WHERE username=$1 AND password=$2', [userName, password])
-        return results.rows
-    }*/
     getUsersByCredentials: async (userName, password) => {
         const sql = `SELECT * FROM security WHERE username='${userName}' and  password='${password}';`
         const response = await new Promise((resolve, reject) =>{

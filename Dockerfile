@@ -1,7 +1,7 @@
 FROM node:10-alpine
-ENV NACOS_ENV="LOCAL"
+ENV NACOS_ENV="config-service-test"
 ENV NACOS_SERVERADDR="143.244.222.245:8848"
-ENV NACOS_NAMESPACE="aforo255"
+ENV NACOS_NAMESPACE="config-service-test"
 ENV NACOS_IDENTITYKEY="nacos"
 ENV NACOS_IDENTITYVALUE="nacos"
 RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
