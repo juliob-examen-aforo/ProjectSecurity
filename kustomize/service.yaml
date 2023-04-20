@@ -7,7 +7,7 @@ spec:
   selector:
     app: service-security
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 5001
-    name: http
+    - protocol: TCP
+      port: 80
+      targetPort: 5001
+      name: http

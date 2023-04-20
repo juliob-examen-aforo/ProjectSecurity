@@ -15,18 +15,18 @@ spec:
         app: service-security
     spec:
       containers:
-      - name: app-security
-        image: juliocm18/app-security:8
-        ports:
-        - containerPort: 5001
-        env:
-        - name: NACOS_SERVERADDR
-          value: "143.244.222.245:8848"
-        - name: NACOS_NAMESPACE
-          value: "config-service-test"
-        - name: NACOS_IDENTITYKEY
-          value: "nacos"
-        - name: NACOS_IDENTITYVALUE
-          value: "nacos"
-        - name: NACOS_ENV
-          value: "config-service-test"
+        - name: app-security
+          image: juliocm18/app-security:9
+          ports:
+            - containerPort: 5001
+          env:
+            - name: NACOS_SERVERADDR
+              value: "143.244.222.245:8848"
+            - name: NACOS_NAMESPACE
+              value: "config-service-test"
+            - name: NACOS_IDENTITYKEY
+              value: "nacos"
+            - name: NACOS_IDENTITYVALUE
+              value: "nacos"
+            - name: NACOS_ENV
+              value: "config-service-test"
