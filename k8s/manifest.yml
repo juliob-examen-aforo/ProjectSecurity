@@ -16,20 +16,20 @@ spec:
     spec:
       containers:
       - name: app-security
-        image: juliocm18/aforo255-nodejs-security2:3
+        image: juliocm18/app-security:5
         ports:
         - containerPort: 5001
         env:
         - name: NACOS_SERVERADDR
           value: "143.244.222.245:8848"
         - name: NACOS_NAMESPACE
-          value: "aforo255"
+          value: "config-service-test"
         - name: NACOS_IDENTITYKEY
           value: "nacos"
         - name: NACOS_IDENTITYVALUE
           value: "nacos"
         - name: NACOS_ENV
-          value: "LOCAL"
+          value: "config-service-test"
 ---
 kind: Service
 apiVersion: v1
