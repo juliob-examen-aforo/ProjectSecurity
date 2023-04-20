@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app-security
-        image: juliocm18/app-security:7
+        image: juliocm18/app-security:8
         ports:
         - containerPort: 5001
         env:
