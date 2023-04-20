@@ -22,9 +22,7 @@ appPromise.then(function(app) {
         localServiceName: ZIPKIN_SERVICE_NAME,
     })
     app.use(zipkinMiddleware({ tracer }))
-
-
-
+    
     app.use('/api', require('./src/app/routes'))
     app.listen(PORT, () => {
         console.log('Application running on port ', PORT)
